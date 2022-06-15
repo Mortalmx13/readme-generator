@@ -25,7 +25,7 @@ const questions = [
     },
     {
       type: 'input',
-      message: 'What is the Usage?',
+      message: 'What is the use of this program?',
       name: 'Usage',
     },
     {
@@ -42,22 +42,33 @@ const questions = [
       ]
     },
     {
-      type: 'list',
-      message: 'What is your preferred method of communication?',
-      name: 'communication',
-      choices: ["txt","phone"]
+      type: 'input',
+      message: 'What\'s your GitHub username?',
+      name: 'gitHub',
     },
     {
       type: 'input',
-      message: 'What do you want in your table of contents?',
-      name: 'table-of-contents',
+      message: 'What is your Email?',
+      name: 'email',
     },
+    {
+      type: 'input',
+      message: 'Who is Contributing to this project?',
+      name: 'Contributing',
+    },
+    {
+      type: 'input',
+      message: 'Explain how to test the program?',
+      name: 'test',
+    },
+    
+    
   ]
 
 inquirer.prompt(questions)
   .then((response) => {
     //wrong here
-    console.log(response);
+    utils.generatePage(response);
 });
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}

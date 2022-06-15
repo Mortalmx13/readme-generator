@@ -10,35 +10,64 @@ const generateLicense = (type) => {
   if (type === "BSD") color = "goldenrod";
   
   return (
-      `
-      <h3>License</h3>
-    <img src="https://img.shields.io/badge/license-${type}-${color}" alt="badge-${type}" height="44" />
-  
-      `
+`
+
+
+<img src="https://img.shields.io/badge/license-${type}-${color}" alt="badge-${type}" height="44" />
+
+`
   )
 }
 
 
 const generatePage = ({
   title,
-  location,
-  bio,
-  linkedIn,
+  description,
+  Installation,
+  Usage,
+  email,
   gitHub,
   license,
+  Contributing,
+  test,
 }) => {
   console.log('GENERATING PAGE…');
   const template = (
-   `
-    # ${title}
+`
+# ${title}
 
-    ## Table of Content
+${generateLicense(license)}
 
-    ## ${description}
+## Table of Content
 
-    
-    ${generateLicense(license)}
-    `
+1. [Description](#description)
+2. [Questions](#questions)
+
+## Description
+
+${description}
+
+
+${Usage}
+
+${Contributing}
+
+${test}
+
+
+### Questions
+
+<a href="https://github.com/#${gitHub}">GitHub</a>
+
+#### If there is more questions my email is:
+
+${email}
+
+${Installation}
+
+
+
+`
   );
   fs.writeFileSync('./output/README.md', template);
   console.log('TEMPLATE GENERATED!');
@@ -48,18 +77,3 @@ const generatePage = ({
 module.exports = {
   generatePage
 };
-
-// const writeToFile = (filename, data) => {
-//   fs.writeFile(filename, JSON.stringify(data, null, 2), (err) => {
-//     if (err) console.log(err);
-//   });
-// };
-
-// const readFromFile = (filename) => {
-//   return fs.readFileSync(filename, 'utf8');
-// };
-
-// module.exports = {
-//   writeToFile,
-//   readFromFile
-// };
