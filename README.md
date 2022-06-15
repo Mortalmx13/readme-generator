@@ -7,10 +7,10 @@
 
 ## Description
 
-This assighment was to make a simple quiz and to keep a timer on it and have a scoreboard at the end to keep all the scores.
+This was to make a program that would write a README for the user with the users input.
 
 ## Visuals
-![Code Quiz](./images/Code-Quiz.png)
+![README Code](Desktop-screenshot.png)
 
 ## Resources
 - [Live Site](https://mortalmx13.github.io/code-quiz/)

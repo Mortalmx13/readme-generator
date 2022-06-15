@@ -42,11 +42,14 @@ ${generateLicense(license)}
 
 1. [Description](#description)
 2. [Questions](#questions)
+3. [Usage](#usage)
 
 ## Description
 
 ${description}
 
+
+## Usage
 
 ${Usage}
 
@@ -55,11 +58,11 @@ ${Contributing}
 ${test}
 
 
-### Questions
+## Questions
 
 <a href="https://github.com/#${gitHub}">GitHub</a>
 
-#### If there is more questions my email is:
+If there is more questions my email is:
 
 ${email}
 
