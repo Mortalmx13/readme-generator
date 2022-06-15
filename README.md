@@ -13,6 +13,6 @@ This was to make a program that would write a README for the user with the users
 ![README Code](Desktop-screenshot.png)
 
 ## Resources
-- [Live Site](https://mortalmx13.github.io/code-quiz/)
+- [Live Site](https://mortalmx13.github.io/readme-generator/)
 
-- [Respository](https://github.com/Mortalmx13/code-quiz)
+- [Respository](https://github.com/Mortalmx13/readme-generator)
